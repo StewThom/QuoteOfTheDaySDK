@@ -8,9 +8,9 @@
 
 import Foundation
 
-class QOD {
+public class QOD {
     
-    func getQuoteOfTheDay() -> String {
+    public func getQuoteOfTheDay() -> String {
         return "Something very wise"
     }
 }
