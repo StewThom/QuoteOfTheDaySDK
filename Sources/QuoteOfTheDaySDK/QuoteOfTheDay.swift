@@ -1,4 +1,6 @@
 
+import Foundation
+
 public class QuoteOfTheDay {
     
     let dataFetcher: DataFetcher
