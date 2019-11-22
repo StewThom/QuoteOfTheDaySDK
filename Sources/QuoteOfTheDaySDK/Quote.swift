@@ -9,22 +9,22 @@
 import Foundation
 
 public struct Quote: Codable {
-    let contents: Contents
+    public let contents: Contents
     
     // MARK: - Contents
     public struct Contents: Codable {
-        let quotes: [QuoteElement]
-        let copyright: String
+        public let quotes: [QuoteElement]
+        public let copyright: String
         
         // MARK: - QuoteElement
         public struct QuoteElement: Codable {
-            let quote, length, author: String
-            let tags: [String]
-            let category, date: String
-            let permalink: String
-            let title: String
-            let background: String
-            let id: String
+            public let quote, length, author: String
+            public let tags: [String]
+            public let category, date: String
+            public let permalink: String
+            public let title: String
+            public let background: String
+            public let id: String
         }
     }
 }
