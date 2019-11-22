@@ -25,6 +25,6 @@ class DataFetcher {
                 print("Decoding Error: \(error)")
                 completion(nil)
             }
-        }
+        }.resume()
     }
 }

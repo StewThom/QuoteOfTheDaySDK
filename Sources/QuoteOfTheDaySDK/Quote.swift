@@ -12,12 +12,12 @@ public struct Quote: Codable {
     let contents: Contents
     
     // MARK: - Contents
-    struct Contents: Codable {
+    public struct Contents: Codable {
         let quotes: [QuoteElement]
         let copyright: String
         
         // MARK: - QuoteElement
-        struct QuoteElement: Codable {
+        public struct QuoteElement: Codable {
             let quote, length, author: String
             let tags: [String]
             let category, date: String
