@@ -1,9 +1,13 @@
 
-open class QuoteOfTheDay {
+public class QuoteOfTheDay {
     
-    let dataFetcher = DataFetcher()
+    let dataFetcher: DataFetcher
     
-    open func fetchQuote(completion: @escaping (Quote?) -> Void) {
+    public init() {
+        dataFetcher = DataFetcher()
+    }
+
+    public func fetchQuote(completion: @escaping (Quote?) -> Void) {
         dataFetcher.get(url: URL(string: "http://quotes.rest/qod")!) { (quote: Quote?) in
             completion(quote)
         }
