@@ -10,6 +10,7 @@
 		1054BC322388313800F0AFBA /* QuoteOfTheDaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1054BC282388313800F0AFBA /* QuoteOfTheDaySDK.framework */; };
 		1054BC372388313800F0AFBA /* QuoteOfTheDaySDKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1054BC362388313800F0AFBA /* QuoteOfTheDaySDKTests.swift */; };
 		1054BC392388313800F0AFBA /* QuoteOfTheDaySDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 1054BC2B2388313800F0AFBA /* QuoteOfTheDaySDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1054BC432388347700F0AFBA /* QOD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1054BC422388347700F0AFBA /* QOD.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		1054BC312388313800F0AFBA /* QuoteOfTheDaySDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuoteOfTheDaySDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1054BC362388313800F0AFBA /* QuoteOfTheDaySDKTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteOfTheDaySDKTests.swift; sourceTree = "<group>"; };
 		1054BC382388313800F0AFBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1054BC422388347700F0AFBA /* QOD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QOD.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				1054BC2B2388313800F0AFBA /* QuoteOfTheDaySDK.h */,
+				1054BC422388347700F0AFBA /* QOD.swift */,
 				1054BC2C2388313800F0AFBA /* Info.plist */,
 			);
 			path = QuoteOfTheDaySDK;
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					1054BC272388313800F0AFBA = {
 						CreatedOnToolsVersion = 11.2.1;
+						LastSwiftMigration = 1120;
 					};
 					1054BC302388313800F0AFBA = {
 						CreatedOnToolsVersion = 11.2.1;
@@ -195,6 +199,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1054BC432388347700F0AFBA /* QOD.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +345,7 @@
 		1054BC3D2388313800F0AFBA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 5UWSQZW25B;
@@ -356,6 +362,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.stewthom.QuoteOfTheDaySDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
 			};
@@ -364,6 +371,7 @@
 		1054BC3E2388313800F0AFBA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 5UWSQZW25B;
@@ -388,6 +396,7 @@
 		1054BC402388313800F0AFBA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5UWSQZW25B;
 				INFOPLIST_FILE = QuoteOfTheDaySDKTests/Info.plist;
@@ -406,6 +415,7 @@
 		1054BC412388313800F0AFBA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5UWSQZW25B;
 				INFOPLIST_FILE = QuoteOfTheDaySDKTests/Info.plist;
