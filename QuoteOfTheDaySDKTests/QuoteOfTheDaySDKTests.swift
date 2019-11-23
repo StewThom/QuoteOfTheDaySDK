@@ -11,25 +11,14 @@ import XCTest
 
 class QuoteOfTheDaySDKTests: XCTestCase {
 
-    override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
     func testExample() {
-        
         let quoteOfTheDay = QuoteOfTheDay()
-        
         let expectation = self.expectation(description: "fetch")
         
         quoteOfTheDay.fetchQuote { (quote) in
-            print(quote)
+            XCTAssertNotNil(quote)
             expectation.fulfill()
         }
-        
         waitForExpectations(timeout: 5, handler: nil)
     }
 }
